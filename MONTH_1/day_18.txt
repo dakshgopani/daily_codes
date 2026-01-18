@@ -1,0 +1,7 @@
+// https://leetcode.com/problems/classes-with-at-least-5-students/description/?envType=problem-list-v2&envId=db-db2-filtering-aggregation
+
+# Write your MySQL query statement below
+select class from courses
+group by class
+having count(student) >= 5;
+
