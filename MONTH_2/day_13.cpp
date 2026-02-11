@@ -7,7 +7,7 @@ public:
         bool ans = false;
         for(int i = 0; i < n; i++){
             if(nums[i] > nums[(i + 1) % n]){
-                if(ans) return false;
+                if(ans) return false; // one time the array break is allowed because the arr is rotated but if its twice then not allowed nside 
                 ans = true;
             }
         }
