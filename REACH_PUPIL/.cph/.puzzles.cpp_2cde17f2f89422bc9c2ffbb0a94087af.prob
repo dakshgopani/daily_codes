@@ -1,0 +1,1 @@
+{"name":"Local: puzzles","url":"c:\\Users\\Daksh Gopani\\OneDrive\\Desktop\\daily_codes\\REACH_PUPIL\\puzzles.cpp","tests":[{"id":1782585338824,"input":"4 6\n10 12 10 7 5 22\n","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Daksh Gopani\\OneDrive\\Desktop\\daily_codes\\REACH_PUPIL\\puzzles.cpp","group":"local","local":true}
