@@ -1,0 +1,116 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+// -------------------- TYPEDEFS --------------------
+using ll = long long;
+using ull = unsigned long long;
+using ld = long double;
+
+// -------------------- FAST IO --------------------
+#define fastio() ios::sync_with_stdio(false); cin.tie(nullptr);
+
+// -------------------- SHORTCUTS --------------------
+#define pb push_back
+#define ppb pop_back
+#define ff first
+#define ss second
+#define endl '\n'
+
+// -------------------- LOOPS --------------------
+#define ff(i, s, e) for(int i = s; i < e; i++)
+#define fr(i, s, e) for(int i = s; i >= e; i--)
+
+// -------------------- CONTAINERS --------------------
+#define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
+#define sz(x) (int)(x).size()
+
+// -------------------- VECTOR --------------------
+#define input(v) for(auto &x : v) cin >> x
+#define output(v) for(auto x : v) cout << x << " "; cout << endl
+
+// -------------------- OUTPUT --------------------
+#define yes cout << "YES\n"
+#define no cout << "NO\n"
+
+// -------------------- CONSTANTS --------------------
+const int INF = 1e9;
+const ll LINF = 1e18;
+const int MOD = 1e9 + 7;
+// const int MOD = 998244353;
+
+// -------------------- MATH --------------------
+ll gcd(ll a, ll b){
+    return __gcd(a, b);
+}
+
+ll lcm(ll a, ll b){
+    return (a / gcd(a, b)) * b;
+}
+
+ll power(ll a, ll b){
+    ll ans = 1;
+
+    while(b){
+        if(b & 1)
+            ans *= a;
+
+        a *= a;
+        b >>= 1;
+    }
+
+    return ans;
+}
+
+ll modPower(ll a, ll b, ll mod = MOD){
+    ll ans = 1;
+    a %= mod;
+
+    while(b){
+        if(b & 1)
+            ans = (ans * a) % mod;
+
+        a = (a * a) % mod;
+        b >>= 1;
+    }
+
+    return ans;
+}
+
+ll modInverse(ll a, ll mod = MOD){
+    return modPower(a, mod - 2, mod);
+}
+
+bool isPrime(ll n){
+
+    if(n < 2)
+        return false;
+
+    for(ll i = 2; i * i <= n; i++){
+
+        if(n % i == 0)
+            return false;
+    }
+
+    return true;
+}
+
+// -------------------- SOLVE --------------------
+void solve(){
+
+}
+
+// -------------------- MAIN --------------------
+int main(){
+
+    fastio();
+
+    int t;
+    cin >> t;
+
+    while(t--){
+        solve();
+    }
+
+    return 0;
+}
