@@ -18,7 +18,7 @@ template <typename T>
 void output(const vector<T> &v) {
     for (const T &x : v)
         cout << x << " ";
-    cout << nl;
+    cout << endl;
 }
 
 void solve() {

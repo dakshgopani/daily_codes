@@ -1,5 +1,3 @@
-// https://codeforces.com/contest/2250/problem/A
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,30 +24,14 @@ void output(const vector<T> &v) {
 void solve() {
     int n;
     cin >> n;
+    
+    vector<int> arr(2 * n);
 
-    vi arr(n);
     input(arr);
+    sort(arr.begin(), arr.end());
 
-    int L = INT_MAX;
-    int R = INT_MIN;
+    cout << arr[n] - arr[n - 1] << endl;
 
-    for(int i = 0; i < n; i++){
-        if(i % 2 == 0)
-            L = min(L, arr[i]);
-        else
-            R = max(R, arr[i]);
-    }
-        
-    if(n % 2 == 1){
-        cout << "NO" << endl;
-        return;
-    }
-            
-    if(L - 1 > R)
-        cout << "YES" << endl;
-    else
-        cout << "NO" << endl;
-        
 }
 
 int main() {
